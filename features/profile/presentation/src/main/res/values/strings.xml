@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Profile Fragment -->
+    <string name="profile_btn_personal_info">Personal Information</string>
+    <string name="profile_btn_change_password">Change Password</string>
+    <string name="profile_btn_log_out">Log Out</string>
+    <string name="profile_log_out_dialog_title">Log Out</string>
+    <string name="msg_log_out_dialog">Are you sure you want to log out?</string>
+
+    <!-- Change password -->
+    <string name="change_password_current_password">Current password</string>
+    <string name="change_password_new_password">New password</string>
+    <string name="change_password_confirm_new_password">Confirm new password</string>
+    <string name="change_password_btn_save">Save</string>
+
+    <!-- PersonalInfo Fragment -->
+    <string name="personal_info_first_name">First name</string>
+    <string name="personal_info_last_name">Last name</string>
+    <string name="personal_info_date_of_birth">Date of birth</string>
+    <string name="personal_info_zip_code">Zip code</string>
+    <string name="personal_info_state">State</string>
+    <string name="personal_info_city">City</string>
+    <string name="personal_info_address">Address</string>
+    <string name="personal_info_id_card">ID card</string>
+    <string name="personal_info_selfie">Selfie</string>
+
+    <string name="personal_info_submit">Submit</string>
+    <string name="personal_info_save">Save</string>
+
+    <string name="personal_info_error_form_empty">The field is required. Please fill in the information</string>
+
+</resources>

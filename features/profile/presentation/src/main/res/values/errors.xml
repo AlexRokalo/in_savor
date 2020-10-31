@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Change Password -->
+    <string name="change_password_the_same">Password has already been used. Please, set a new one</string>
+    <string name="change_password_password_wrong">Password must consist of upper and lower case characters, digits and contain at least 8 characters</string>
+    <string name="change_password_new_password_confirm_password_not_same">Your password and confirm password don\'t match. Please, try again</string>
+    <string name="change_password_old_incorrect">Current password is entered incorrectly. Please, try again</string>
+</resources>

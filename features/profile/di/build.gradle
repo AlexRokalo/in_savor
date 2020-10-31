@@ -12,7 +12,6 @@ android {
         versionName project.VERSION_NAME
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -23,32 +22,24 @@ android {
     }
 }
 
-ext {
-    ciceroneVersion = "5.1.1"
-}
-
 dependencies {
-
-    implementation project(':utils:mvvm')
-    implementation project(':core:ui-kit')
-    implementation project(':core:navigation:domain')
-
-    api project(':features:profile:presentation')
-
-    //Koin
-    implementation "org.koin:koin-androidx-viewmodel:${project.versions.koin}"
-    implementation "org.koin:koin-androidx-scope:${project.versions.koin}"
-
-    //UI
-    implementation "androidx.appcompat:appcompat:${project.versions.appCompat}"
-
-    //Kotlin
+    implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:${project.versions.kotlin}"
 
-    //Reactivex
-    implementation "io.reactivex.rxjava3:rxandroid:${project.versions.rxandroid}"
+    implementation project(':utils:mvvm')
+    implementation project(':utils:livedata')
 
-    // Cicerone
-    api "ru.terrakok.cicerone:cicerone:$ciceroneVersion"
-    implementation project(path: ':features:profile:presentation')
+    implementation project(':features:profile:data')
+    implementation project(':features:profile:domain')
+    implementation project(':features:profile:presentation')
+
+    implementation project(':core:network:domain')
+
+    //Koin
+    implementation "org.koin:koin-androidx-scope:${project.versions.koin}"
+    implementation "org.koin:koin-androidx-viewmodel:${project.versions.koin}"
+    implementation "org.koin:koin-androidx-fragment:${project.versions.koin}"
+    implementation "org.koin:koin-androidx-ext:${project.versions.koin}"
+
+    implementation "com.squareup.retrofit2:retrofit:${project.versions.retrofit}"
 }

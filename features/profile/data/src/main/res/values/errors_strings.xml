@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="unknown_error">Something went wrong</string>
+
+    <string name="change_password_incorrect_password">Old password entered incorrectly. Please, try again</string>
+</resources>

@@ -51,7 +51,7 @@ dependencies {
     implementation project(':core:navigation:di')
     implementation project(':core:network:di')
 
-//    implementation project(':features:auth:di')
+    implementation project(':features:profile:di')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:${project.versions.kotlin}"
     implementation "androidx.appcompat:appcompat:${project.versions.appCompat}"

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="42dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="@dimen/avatar_width"
+            android:layout_height="@dimen/avatar_height"
+            android:layout_gravity="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:id="@+id/tvProfileName"
+            style="@style/Core.TitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textAlignment="center"
+            tools:text="Alexey Rokalo" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="32dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_shadow_background" />
+
+        <Button
+            android:id="@+id/btnPersonalInfo"
+            style="@style/Core.Style.ButtonText.NavigationIcon"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/profile_btn_personal_info" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/view_shadow_background" />
+
+        <Button
+            android:id="@+id/btnChangePassword"
+            style="@style/Core.Style.ButtonText.NavigationIcon"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/profile_btn_change_password" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/view_shadow_background" />
+
+        <Button
+            android:id="@+id/btnLogOut"
+            style="@style/Dashboard.Style.ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/profile_btn_log_out" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/view_shadow_background" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

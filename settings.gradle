@@ -1,3 +1,9 @@
+include ':features:profile:di'
+include ':features:profile:data'
+include ':features:profile:presentation'
+include ':features:profile:domain'
+
+include ':utils:livedata'
 include ':utils:pagination-android'
 include ':utils:pagination'
 

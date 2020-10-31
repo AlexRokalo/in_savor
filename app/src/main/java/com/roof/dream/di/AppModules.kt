@@ -1,11 +1,12 @@
 package com.roof.dream.di
 
+import com.itexus.core.network.di.ServerQualifier
 import com.itexus.core.network.di.networkModule
 import com.itexus.di.main.navigationModule
+import com.itexus.di.profile.buildProfileModule
 import org.koin.core.module.Module
-import org.koin.dsl.module
 
-private val featuresModules = module { }
+private val featuresModules = buildProfileModule(serverQualifier = ServerQualifier.app)
 /*TODO Add modules */
 //    buildProfileModule(serverQualifier = ServerQualifier.app) +
 //            buildTransactionsModule(serverQualifier = ServerQualifier.app) +
