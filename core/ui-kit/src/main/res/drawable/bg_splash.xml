@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- TODO Improve hardcore-->
+    <item
+        android:width="2000dp"
+        android:height="2000dp"
+        android:drawable="@color/primaryColor" />
+
+    <item
+        android:drawable="@drawable/ic_splash_page"
+        android:gravity="center" />
+
+</layer-list>

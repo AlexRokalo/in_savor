@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itexus.payhammer.navigation">
+
+    <application>
+        <activity
+            android:name="com.itexus.navigation.activities.splash.SplashActivity"
+            android:theme="@style/Core.Theme.SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.itexus.navigation.activities.app.AppActivity"
+            android:theme="@style/Core.Theme.AppTheme" />
+
+    </application>
+</manifest>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toolbar_login">Log In</string>
+    <string name="toolbar_sign_up">Sign Up</string>
+    <string name="toolbar_verification_code">Verification Code</string>
+    <string name="toolbar_onboarding_form">Onboarding Form</string>
+    <string name="toolbar_personal_info_form">Personal Information</string>
+    <string name="toolbar_state">State</string>
+    <string name="toolbar_forgot_password">Forgot Password</string>
+    <string name="toolbar_change_password">Change password</string>
+    <string name="toolbar_enter_new_password">Enter New Password</string>
+    <string name="toolbar_send_money">Send money</string>
+    <string name="toolbar_recipients">Recipients</string>
+    <string name="toolbar_transactions">Transactions</string>
+    <string name="toolbar_support">Support</string>
+    <string name="toolbar_profile">Profile</string>
+    <string name="toolbar_personal_information">Personal Information</string>
+    <string name="toolbar_choose_your_lang">Choose your language</string>
+    <string name="toolbar_text_us">Text Us</string>
+    <string name="toolbar_faq">FAQ</string>
+
+    <!-- TODO Change Tabs -->
+    <string name="tab_category">Категори</string>
+    <string name="tab_general_list">Главная</string>
+    <string name="tab_filter">Фильтр</string>
+    <string name="tab_profile">Профиль</string>
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Core" />
+
+
+    <style name="Core.Text">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Core.TitleText">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Core.ToolbarText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="Core.Terms">
+        <item name="fontPath">fonts/ProximaNova-Regular.ttf</item>
+    </style>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Core." />
+
+    <style name="Core.Style" />
+
+    <style name="Core.Style.Background">
+        <item name="android:background">@color/primaryColor</item>
+    </style>
+
+    <style name="Core.Style.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Text Input Layout  -->
+    <style name="Core.Style.TextInputField" parent="Widget.Design.TextInputLayout"></style>
+
+    <style name="Core.Style.Button.Blue"></style>
+
+    <style name="Core.Style.ButtonText" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Core.Style.Toolbar">
+        <item name="android:layout_height">?android:attr/actionBarSize</item>
+    </style>
+
+
+    <style name="Core.Style.ClickableLayout">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+</resources>

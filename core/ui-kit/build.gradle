@@ -1,0 +1,47 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode Integer.parseInt(project.VERSION_CODE)
+        versionName project.VERSION_NAME
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    def input_mask_version = '6.0.0'
+    def calligraphy_version = '3.1.1'
+    def viewpump_version = '2.0.3'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:${project.versions.kotlin}"
+    implementation "androidx.appcompat:appcompat:${project.versions.appCompat}"
+
+    /* UI */
+    api "com.google.android.material:material:${project.versions.material}"
+    api "androidx.constraintlayout:constraintlayout:${project.versions.constraint}"
+    api "com.redmadrobot:input-mask-android:$input_mask_version"
+
+    /* Calligraphy */
+    api "io.github.inflationx:calligraphy3:$calligraphy_version"
+    api "io.github.inflationx:viewpump:$viewpump_version"
+
+    /* Picasso */
+    def picasso_version = '2.71828'
+    implementation "com.squareup.picasso:picasso:$picasso_version"
+}

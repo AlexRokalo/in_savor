@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#F1EDED</color>
+    <color name="primaryLightColor">#4FC869</color>
+    <color name="primaryDarkColor">#01A811</color>
+    <color name="primaryTextColor">@android:color/black</color>
+
+    <!-- App -->
+    <color name="view_shadow_background">#1A484759</color>
+</resources>

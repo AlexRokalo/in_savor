@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Core.Theme" />
+
+    <style name="Core.Theme.SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/primaryLightColor</item>
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+
+    <!-- Core application theme. -->
+    <style name="Core.Theme.AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/primaryLightColor</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+
+    <style name="Core.Theme.TextInputEditText" parent="Theme.AppCompat.Light">
+        <!-- Inactive underline color-->
+    </style>
+
+</resources>

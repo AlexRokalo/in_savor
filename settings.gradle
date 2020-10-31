@@ -1,0 +1,21 @@
+include ':utils:pagination-android'
+include ':utils:pagination'
+
+include ':utils:databinding'
+include ':utils:mvvm'
+
+include ':core:network:di'
+include ':core:network:impl'
+include ':core:network:domain'
+
+include ':core:navigation:impl'
+include ':core:navigation:di'
+include ':core:navigation:domain'
+
+include ':core:ui-kit'
+
+
+
+
+include ':app'
+rootProject.name = "dream"

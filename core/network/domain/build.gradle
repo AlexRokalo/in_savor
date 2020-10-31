@@ -1,0 +1,15 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:${project.versions.kotlin}"
+
+    //ReactiveX
+    api "io.reactivex.rxjava3:rxjava:${project.versions.rxjava}"
+
+    implementation "com.squareup.retrofit2:retrofit:${project.versions.retrofit}"
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"

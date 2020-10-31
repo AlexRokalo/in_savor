@@ -1,0 +1,55 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode Integer.parseInt(project.VERSION_CODE)
+        versionName project.VERSION_NAME
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+ext {
+    ciceroneVersion = "5.1.1"
+}
+
+dependencies {
+
+    implementation project(':utils:mvvm')
+    implementation project(':core:ui-kit')
+    implementation project(':core:navigation:domain')
+
+
+//    implementation project(':features:auth:domain')
+//    api project(':features:auth:presentation')
+
+    //Koin
+    implementation "org.koin:koin-androidx-viewmodel:${project.versions.koin}"
+    implementation "org.koin:koin-androidx-scope:${project.versions.koin}"
+
+    //UI
+    implementation "androidx.appcompat:appcompat:${project.versions.appCompat}"
+
+    //Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:${project.versions.kotlin}"
+
+    //Reactivex
+    implementation "io.reactivex.rxjava3:rxandroid:${project.versions.rxandroid}"
+
+    // Cicerone
+    api "ru.terrakok.cicerone:cicerone:$ciceroneVersion"
+}
