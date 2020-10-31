@@ -1,0 +1,19 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:${project.versions.kotlin}"
+
+    implementation project(':features:filter:domain')
+    implementation project(':core:network:domain')
+
+    implementation "com.squareup.retrofit2:retrofit:${project.versions.retrofit}"
+
+    def gson_version = '2.8.6'
+    implementation "com.google.code.gson:gson:$gson_version"
+
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"

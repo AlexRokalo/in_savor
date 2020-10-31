@@ -6,6 +6,7 @@ import com.itexus.features.profile.presentation.ui.ProfileFragment
 import com.itexus.navigation.activities.app.IAppRouter
 import com.itexus.navigation.utils.withArguments
 import com.itexus.payhammer.navigation.R
+import com.itexus.presentation.ui.FilterFragment
 import ru.terrakok.cicerone.Router
 import ru.terrakok.cicerone.android.support.SupportAppScreen
 
@@ -25,6 +26,13 @@ class AppRouter(private val router: Router) : IAppRouter {
         })
     }
 
-    override fun navigateFilter() {}
+    override fun navigateFilter() {
+        router.newRootScreen(object : SupportAppScreen() {
+            override fun getFragment() = FilterFragment().withArguments {
+                it.toolbarTitleRes = R.string.toolbar_filter
+                it.isBottomNavigationVisible = true
+            }
+        })
+    }
 
 }

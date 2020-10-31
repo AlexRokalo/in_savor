@@ -52,6 +52,7 @@ dependencies {
     implementation project(':core:network:di')
 
     implementation project(':features:profile:di')
+    implementation project(':features:filter:di')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:${project.versions.kotlin}"
     implementation "androidx.appcompat:appcompat:${project.versions.appCompat}"

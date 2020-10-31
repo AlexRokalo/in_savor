@@ -23,32 +23,29 @@ android {
     }
 }
 
-ext {
-    ciceroneVersion = "5.1.1"
-}
-
 dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:${project.versions.kotlin}"
 
     implementation project(':utils:mvvm')
-    implementation project(':core:ui-kit')
-    implementation project(':core:navigation:domain')
+    implementation project(':utils:livedata')
+    implementation project(':utils:databinding')
+    api project(':utils:pagination')
+    api project(':utils:pagination-android')
 
-    api project(':features:profile:presentation')
-    api project(':features:filter:presentation')
+    implementation project(':core:ui-kit')
+
+    implementation project(':features:filter:domain')
 
     //Koin
     implementation "org.koin:koin-androidx-viewmodel:${project.versions.koin}"
-    implementation "org.koin:koin-androidx-scope:${project.versions.koin}"
-
-    //UI
-    implementation "androidx.appcompat:appcompat:${project.versions.appCompat}"
-
-    //Kotlin
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:${project.versions.kotlin}"
 
     //Reactivex
     implementation "io.reactivex.rxjava3:rxandroid:${project.versions.rxandroid}"
 
-    // Cicerone
-    api "ru.terrakok.cicerone:cicerone:$ciceroneVersion"
+    def circleimageview_version = '3.1.0'
+    implementation "de.hdodenhof:circleimageview:$circleimageview_version"
+
+    def joda_time_verision = '2.10.6'
+    implementation "joda-time:joda-time:$joda_time_verision"
 }

@@ -23,6 +23,11 @@
             <option value="$PROJECT_DIR$/core/network/impl" />
             <option value="$PROJECT_DIR$/core/ui-kit" />
             <option value="$PROJECT_DIR$/features" />
+            <option value="$PROJECT_DIR$/features/filter" />
+            <option value="$PROJECT_DIR$/features/filter/data" />
+            <option value="$PROJECT_DIR$/features/filter/di" />
+            <option value="$PROJECT_DIR$/features/filter/domain" />
+            <option value="$PROJECT_DIR$/features/filter/presentation" />
             <option value="$PROJECT_DIR$/features/profile" />
             <option value="$PROJECT_DIR$/features/profile/data" />
             <option value="$PROJECT_DIR$/features/profile/di" />

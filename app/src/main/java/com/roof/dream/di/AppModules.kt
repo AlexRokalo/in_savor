@@ -4,9 +4,12 @@ import com.itexus.core.network.di.ServerQualifier
 import com.itexus.core.network.di.networkModule
 import com.itexus.di.main.navigationModule
 import com.itexus.di.profile.buildProfileModule
+import com.itexus.di.transactions.buildFilterModule
 import org.koin.core.module.Module
 
-private val featuresModules = buildProfileModule(serverQualifier = ServerQualifier.app)
+private val featuresModules =
+    buildProfileModule(serverQualifier = ServerQualifier.app) +
+            buildFilterModule(serverQualifier = ServerQualifier.app)
 /*TODO Add modules */
 //    buildProfileModule(serverQualifier = ServerQualifier.app) +
 //            buildTransactionsModule(serverQualifier = ServerQualifier.app) +

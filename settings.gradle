@@ -1,3 +1,8 @@
+include ':features:filter:data'
+include ':features:filter:di'
+include ':features:filter:domain'
+include ':features:filter:presentation'
+
 include ':features:profile:di'
 include ':features:profile:data'
 include ':features:profile:presentation'
