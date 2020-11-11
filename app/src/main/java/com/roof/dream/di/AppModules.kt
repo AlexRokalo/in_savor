@@ -1,10 +1,10 @@
 package com.roof.dream.di
 
-import com.itexus.core.network.di.ServerQualifier
-import com.itexus.core.network.di.networkModule
-import com.itexus.di.main.navigationModule
-import com.itexus.di.profile.buildProfileModule
-import com.itexus.di.transactions.buildFilterModule
+import com.roof.core.network.di.ServerQualifier
+import com.roof.core.network.di.networkModule
+import com.roof.di.main.navigationModule
+import com.roof.di.profile.buildProfileModule
+import com.roof.di.transactions.buildFilterModule
 import org.koin.core.module.Module
 
 private val featuresModules =

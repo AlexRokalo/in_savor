@@ -1,9 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.itexus.features.dashboard.presentation">
+    package="com.roof.features.dashboard.presentation">
 
     <application>
         <activity
-            android:name="com.itexus.features.profile.presentation.ui.states.StatesActivity"
+            android:name="com.roof.features.profile.presentation.ui.states.StatesActivity"
             android:theme="@style/Core.Theme.AppTheme" />
     </application>
 </manifest>

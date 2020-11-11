@@ -23,6 +23,7 @@
             <option value="$PROJECT_DIR$/core/network/impl" />
             <option value="$PROJECT_DIR$/core/ui-kit" />
             <option value="$PROJECT_DIR$/features" />
+            <option value="$PROJECT_DIR$/features/favorites" />
             <option value="$PROJECT_DIR$/features/filter" />
             <option value="$PROJECT_DIR$/features/filter/data" />
             <option value="$PROJECT_DIR$/features/filter/di" />
