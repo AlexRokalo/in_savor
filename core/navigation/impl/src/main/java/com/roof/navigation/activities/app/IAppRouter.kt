@@ -1,8 +1,9 @@
 package com.roof.navigation.activities.app
 
 interface IAppRouter {
-    fun navigateGeneralList()
-    fun navigateCategory()
-    fun navigateProfile()
-    fun navigateFilter()
+    fun navigateMainPage()
+    fun navigateFavoritesPage()
+    fun navigateMapPage()
+    fun navigateProfilePage()
+    fun navigateCategoryPage()
 }
