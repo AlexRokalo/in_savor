@@ -7,7 +7,7 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
-        applicationId "com.roof.dream"
+        applicationId "com.roof.insavor"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode Integer.parseInt(project.VERSION_CODE)
@@ -53,6 +53,7 @@ dependencies {
 
     implementation project(':features:profile:di')
     implementation project(':features:filter:di')
+    implementation project(':features:favorites:di')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:${project.versions.kotlin}"
     implementation "androidx.appcompat:appcompat:${project.versions.appCompat}"

@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode Integer.parseInt(project.VERSION_CODE)
+        versionName project.VERSION_NAME
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:${project.versions.kotlin}"
+
+    implementation project(':utils:mvvm')
+    implementation project(':utils:livedata')
+    implementation project(':utils:databinding')
+
+    implementation project(':core:ui-kit')
+
+    implementation project(':features:favorites:domain')
+
+    //Koin
+    implementation "org.koin:koin-androidx-viewmodel:${project.versions.koin}"
+
+    //Reactivex
+    implementation "io.reactivex.rxjava3:rxandroid:${project.versions.rxandroid}"
+
+    def joda_time_verision = '2.10.6'
+    implementation "joda-time:joda-time:$joda_time_verision"
+}
