@@ -10,5 +10,6 @@
     <string name="tab_general_list">Главная</string>
     <string name="tab_filter">Фильтр</string>
     <string name="tab_profile">Профиль</string>
+    <string name="tab_favorites">Избранное</string>
 
 </resources>

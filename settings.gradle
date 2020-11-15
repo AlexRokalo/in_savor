@@ -1,3 +1,8 @@
+include ':features:favorites:di'
+include ':features:favorites:data'
+include ':features:favorites:domain'
+include ':features:favorites:presentation'
+
 include ':features:filter:data'
 include ':features:filter:di'
 include ':features:filter:domain'
@@ -29,4 +34,4 @@ include ':core:ui-kit'
 
 
 include ':app'
-rootProject.name = "dream"
+rootProject.name = "InSavor"
