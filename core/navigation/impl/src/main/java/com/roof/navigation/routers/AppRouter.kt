@@ -32,7 +32,14 @@ class AppRouter(private val router: Router) : IAppRouter {
         })
     }
 
-    override fun navigateMapPage() {}
+    override fun navigateMapPage() {
+        router.newRootScreen(object : SupportAppScreen() {
+            override fun getFragment() = FavoritesFragment().withArguments {
+                it.toolbarTitleRes = R.string.tab_map
+                it.isBottomNavigationVisible = true
+            }
+        })
+    }
 
     override fun navigateProfilePage() {
         router.newRootScreen(object : SupportAppScreen() {

@@ -6,10 +6,10 @@
     <string name="toolbar_profile">Профиль</string>
 
     <!-- TODO Change Tabs -->
-    <string name="tab_category">Категори</string>
+    <string name="tab_category">Подборки</string>
     <string name="tab_general_list">Главная</string>
-    <string name="tab_filter">Фильтр</string>
     <string name="tab_profile">Профиль</string>
     <string name="tab_favorites">Избранное</string>
+    <string name="tab_map">Карта</string>
 
 </resources>
