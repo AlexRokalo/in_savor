@@ -6,12 +6,14 @@ import com.roof.di.main.navigationModule
 import com.roof.di.profile.buildProfileModule
 import com.roof.di.transactions.buildFilterModule
 import com.roof.features.favorites.di.buildFavoritesModule
+import com.roof.features.main.di.buildMainModule
 import org.koin.core.module.Module
 
 private val featuresModules =
     buildProfileModule(serverQualifier = ServerQualifier.app) +
             buildFilterModule(serverQualifier = ServerQualifier.app) +
-            buildFavoritesModule(serverQualifier = ServerQualifier.app)
+            buildFavoritesModule(serverQualifier = ServerQualifier.app) +
+            buildMainModule(serverQualifier = ServerQualifier.app)
 
 
 internal val app: List<Module> =

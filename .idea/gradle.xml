@@ -33,6 +33,11 @@
             <option value="$PROJECT_DIR$/features/filter/di" />
             <option value="$PROJECT_DIR$/features/filter/domain" />
             <option value="$PROJECT_DIR$/features/filter/presentation" />
+            <option value="$PROJECT_DIR$/features/main" />
+            <option value="$PROJECT_DIR$/features/main/data" />
+            <option value="$PROJECT_DIR$/features/main/di" />
+            <option value="$PROJECT_DIR$/features/main/domain" />
+            <option value="$PROJECT_DIR$/features/main/presentation" />
             <option value="$PROJECT_DIR$/features/profile" />
             <option value="$PROJECT_DIR$/features/profile/data" />
             <option value="$PROJECT_DIR$/features/profile/di" />

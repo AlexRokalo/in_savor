@@ -3,6 +3,7 @@ package com.roof.navigation.routers
 import com.roof.core.ui_kit.widget.BottomNavigationWidget.Companion.isBottomNavigationVisible
 import com.roof.core.ui_kit.widget.ToolbarWidget.Companion.toolbarTitleRes
 import com.roof.features.favorites.presentation.FavoritesFragment
+import com.roof.features.main.presentation.MainFragment
 import com.roof.features.profile.presentation.ui.ProfileFragment
 import com.roof.navigation.activities.app.IAppRouter
 import com.roof.navigation.utils.withArguments
@@ -13,7 +14,14 @@ import ru.terrakok.cicerone.android.support.SupportAppScreen
 
 class AppRouter(private val router: Router) : IAppRouter {
 
-    override fun navigateMainPage() {}
+    override fun navigateMainPage() {
+        router.newRootScreen(object : SupportAppScreen() {
+            override fun getFragment() = MainFragment().withArguments {
+                it.toolbarTitleRes = R.string.tab_general_list
+                it.isBottomNavigationVisible = true
+            }
+        })
+    }
 
     override fun navigateFavoritesPage() {
         router.newRootScreen(object : SupportAppScreen() {
