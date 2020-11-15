@@ -28,8 +28,9 @@ class AppActivity : AppCompatActivity() {
             when (item.itemId) {
                 R.id.category -> viewModel.onCategoryClick()
                 R.id.general_list -> viewModel.onGeneralListClick()
-                R.id.filter -> viewModel.onFilterClick()
+                R.id.favorites -> viewModel.onFavoritesClick()
                 R.id.profile -> viewModel.onProfileClick()
+                R.id.maps -> viewModel.onMapsClick()
             }
             true
         })

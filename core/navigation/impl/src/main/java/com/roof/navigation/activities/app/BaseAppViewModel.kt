@@ -7,6 +7,7 @@ abstract class BaseAppViewModel : RxViewModel() {
     /* TODO Rename */
     abstract fun onCategoryClick()
     abstract fun onGeneralListClick()
-    abstract fun onFilterClick()
+    abstract fun onFavoritesClick()
     abstract fun onProfileClick()
+    abstract fun onMapsClick()
 }
