@@ -40,6 +40,8 @@ allprojects {
         google()
         jcenter()
         maven { url "https://jitpack.io" }
+        // or for the ASAP availability
+        maven { url = 'https://dl.bintray.com/kirich1409/maven' }
     }
 }
 
