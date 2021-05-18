@@ -8,5 +8,6 @@
     <color name="view_shadow_background">#1A484759</color>
     <color name="navigation_icons_color">#807B7891</color>
     <color name="main_background">#333333</color>
+    <color name="splash_background">#2B2B2B</color>
     <color name="uncheck_color">#999999</color>
 </resources>

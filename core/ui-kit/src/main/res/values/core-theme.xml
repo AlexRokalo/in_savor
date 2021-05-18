@@ -5,7 +5,7 @@
 
     <style name="Core.Theme.SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/splash_background</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowBackground">@drawable/bg_splash</item>
     </style>
