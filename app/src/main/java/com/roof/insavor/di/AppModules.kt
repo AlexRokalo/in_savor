@@ -1,4 +1,4 @@
-package com.roof.dream.di
+package com.roof.insavor.di
 
 import com.roof.core.network.di.ServerQualifier
 import com.roof.core.network.di.networkModule

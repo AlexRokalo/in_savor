@@ -15,11 +15,24 @@ android {
         consumerProguardFiles "consumer-rules.pro"
     }
 
+    buildFeatures {
+        viewBinding true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
 }
 
@@ -43,4 +56,9 @@ dependencies {
 
     def joda_time_verision = '2.10.6'
     implementation "joda-time:joda-time:$joda_time_verision"
+
+    //ViewBindingDelegate
+    def viewbindingpropertydelegate_version = '1.4.1'
+    implementation "com.kirich1409.viewbindingpropertydelegate:viewbindingpropertydelegate:$viewbindingpropertydelegate_version"
+
 }

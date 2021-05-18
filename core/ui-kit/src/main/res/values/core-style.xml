@@ -6,7 +6,7 @@
     <style name="Core.Style" />
 
     <style name="Core.Style.Background">
-        <item name="android:background">@color/primaryColor</item>
+        <item name="android:background">@color/colorPrimary</item>
     </style>
 
     <style name="Core.Style.Button" parent="Widget.MaterialComponents.Button">
@@ -26,6 +26,7 @@
 
     <style name="Core.Style.Toolbar">
         <item name="android:layout_height">?android:attr/actionBarSize</item>
+        <item name="android:background">@color/main_background</item>
     </style>
 
 

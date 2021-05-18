@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/toolbar"
     style="@style/Core.Style.Toolbar"
     android:layout_width="match_parent"
@@ -12,18 +13,27 @@
     <ImageButton
         android:id="@+id/toolbarBackButton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_centerVertical="true"
         android:background="?android:attr/selectableItemBackgroundBorderless"
         android:padding="16dp"
-        android:src="@drawable/ic_arrow_back" />
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/toolbarTitle"
         style="@style/Core.ToolbarText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_gravity="center" />
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/toolbarBackButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/toolbarBackButton"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Toolbar" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

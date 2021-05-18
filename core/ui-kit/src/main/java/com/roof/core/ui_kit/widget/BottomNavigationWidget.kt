@@ -5,10 +5,12 @@ import android.util.TypedValue
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.MenuRes
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.LifecycleOwner
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.bottomnavigation.LabelVisibilityMode.LABEL_VISIBILITY_LABELED
+import com.roof.core.ui_kit.R
 import com.roof.core.ui_kit.ext.onCurrentFragmentChanged
 import com.roof.core.ui_kit.utils.gone
 import com.roof.core.ui_kit.utils.visible
@@ -49,11 +51,11 @@ class BottomNavigationWidget(
         inflateMenu(menuRes)
         setOnNavigationItemSelectedListener(listener)
         labelVisibilityMode = LABEL_VISIBILITY_LABELED
-        /*TODO Add color selector */
-        /*   with(resources.getColorStateList(R.color.bottom_navigation_item_selector, null)) {
-               itemIconTintList = this
-               itemTextColor = this
-           }*/
+        setBackgroundColor(ContextCompat.getColor(context, R.color.main_background))
+        with(resources.getColorStateList(R.color.bottom_navigation_item_selector, null)) {
+            itemIconTintList = this
+            itemTextColor = this
+        }
 
         fragmentActivity.onCurrentFragmentChanged {
             arguments?.isBottomNavigationVisible?.let { isVisible ->

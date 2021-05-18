@@ -1,9 +1,1 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.roof.features.dashboard.presentation">
-
-    <application>
-        <activity
-            android:name="com.roof.features.profile.presentation.ui.states.StatesActivity"
-            android:theme="@style/Core.Theme.AppTheme" />
-    </application>
-</manifest>
+<manifest package="com.roof.features.dashboard.presentation"></manifest>
