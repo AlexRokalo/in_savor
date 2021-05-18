@@ -4,6 +4,27 @@
     <bytecodeTargetLevel target="1.8">
       <module name="favorites-domain" target="1.7" />
       <module name="InSavor-domain" target="1.7" />
+      <module name="InSavor.app" target="11" />
+      <module name="InSavor.core.navigation.di" target="11" />
+      <module name="InSavor.core.navigation.impl" target="11" />
+      <module name="InSavor.core.network.di" target="11" />
+      <module name="InSavor.core.network.impl" target="11" />
+      <module name="InSavor.core.ui-kit" target="11" />
+      <module name="InSavor.features.favorites.data" target="11" />
+      <module name="InSavor.features.favorites.di" target="11" />
+      <module name="InSavor.features.favorites.presentation" target="11" />
+      <module name="InSavor.features.filter.di" target="11" />
+      <module name="InSavor.features.filter.presentation" target="11" />
+      <module name="InSavor.features.main.data" target="11" />
+      <module name="InSavor.features.main.di" target="11" />
+      <module name="InSavor.features.main.presentation" target="11" />
+      <module name="InSavor.features.profile.data" target="11" />
+      <module name="InSavor.features.profile.di" target="11" />
+      <module name="InSavor.features.profile.presentation" target="11" />
+      <module name="InSavor.utils.databinding" target="11" />
+      <module name="InSavor.utils.livedata" target="11" />
+      <module name="InSavor.utils.mvvm" target="11" />
+      <module name="InSavor.utils.pagination-android" target="11" />
       <module name="main-domain" target="1.7" />
     </bytecodeTargetLevel>
   </component>
