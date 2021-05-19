@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="16dp"
+    tools:minHeight="224dp">
+
+    <TextView
+        android:id="@+id/tv_rate"
+        style="@style/Core.Restoran.Rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="4.5" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/Core.Restoran.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Друзья" />
+
+    <TextView
+        android:id="@+id/tv_kitchen_type"
+        style="@style/Core.Restoran.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        tools:text="Традиционная кухня" />
+
+    <TextView
+        android:id="@+id/tv_work_time"
+        style="@style/Core.Restoran.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black_text_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_kitchen_type"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kitchen_type"
+        tools:text="с 12.00 - 23:00" />
+
+    <ImageView
+        android:id="@+id/img_have_time"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/shape_dot_green_rate"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_work_time"
+        app:layout_constraintLeft_toRightOf="@id/tv_work_time"
+        app:layout_constraintTop_toTopOf="@id/tv_work_time"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <LinearLayout
+        android:id="@+id/container_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <TextView
+            android:id="@+id/tv_direction_distance"
+            style="@style/Core.Restoran.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_text_title"
+            tools:text="2,5 км " />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/ic_direction_right" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/chb_favorite"
+        style="@style/Core.Restoran.Favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
