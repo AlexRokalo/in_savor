@@ -52,7 +52,6 @@
     </style>
 
     <style name="Core.Style.RestaurantCard" parent="Widget.MaterialComponents.CardView">
-        <item name="android:minHeight">224dp</item>
         <item name="cardCornerRadius">4dp</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
@@ -82,6 +81,7 @@
 
     <style name="Core.Restoran.Favorite" parent="Widget.AppCompat.CompoundButton.CheckBox">
         <item name="android:button">@drawable/selector_check_box_favorite_restoran</item>
+        <item name="android:buttonTintMode">multiply</item>
     </style>
 
 </resources>

@@ -3,11 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:paddingStart="16dp"
     android:paddingTop="8dp"
-    android:paddingEnd="16dp"
-    tools:minHeight="224dp">
+    android:paddingEnd="16dp">
 
     <TextView
         android:id="@+id/tv_rate"
@@ -63,6 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent">
 
@@ -87,8 +87,8 @@
     <CheckBox
         android:id="@+id/chb_favorite"
         style="@style/Core.Restoran.Favorite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
