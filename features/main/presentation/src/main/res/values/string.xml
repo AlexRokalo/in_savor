@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Kitchen Type -->
+    <string name="traditional_type">Традиционная кухня</string>
+    <string name="author_type">Авторская кухня</string>
+    <string name="japan_type">Японская кухня</string>
+</resources>

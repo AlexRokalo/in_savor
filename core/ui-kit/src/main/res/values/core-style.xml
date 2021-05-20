@@ -50,4 +50,38 @@
         <item name="iconGravity">end</item>
         <item name="fontPath">fonts/ProximaNova-Regular.ttf</item>
     </style>
+
+    <style name="Core.Style.RestaurantCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">4dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="Core.Restoran" />
+
+    <style name="Core.Restoran.Rate">
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/green_text_rate</item>
+    </style>
+
+    <style name="Core.Restoran.Title">
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black_text_title</item>
+    </style>
+
+    <style name="Core.Restoran.Subtitle">
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/grey_text_subtitle</item>
+    </style>
+
+    <style name="Core.Restoran.Favorite" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_check_box_favorite_restoran</item>
+        <item name="android:buttonTintMode">multiply</item>
+    </style>
+
 </resources>
