@@ -21,6 +21,9 @@
       <module name="InSavor.features.profile.data" target="11" />
       <module name="InSavor.features.profile.di" target="11" />
       <module name="InSavor.features.profile.presentation" target="11" />
+      <module name="InSavor.features.restoran_details.data" target="11" />
+      <module name="InSavor.features.restoran_details.di" target="11" />
+      <module name="InSavor.features.restoran_details.presentation" target="11" />
       <module name="InSavor.utils.databinding" target="11" />
       <module name="InSavor.utils.livedata" target="11" />
       <module name="InSavor.utils.mvvm" target="11" />

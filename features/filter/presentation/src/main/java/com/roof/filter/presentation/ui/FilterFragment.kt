@@ -1,11 +1,11 @@
-package com.roof.presentation.ui
+package com.roof.filter.presentation.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.roof.core.mvvm.rx.view_model.RxFragment
-import com.roof.presentation.R
+import com.roof.filter.presentation.R
 
 class FilterFragment : RxFragment() {
 

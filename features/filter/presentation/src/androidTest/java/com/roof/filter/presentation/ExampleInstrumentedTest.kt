@@ -1,4 +1,4 @@
-package com.roof.presentation
+package com.roof.filter.presentation
 
 /**
  * Instrumented test, which will execute on an Android device.

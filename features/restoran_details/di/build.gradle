@@ -1,0 +1,45 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode Integer.parseInt(project.VERSION_CODE)
+        versionName project.VERSION_NAME
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:${project.versions.kotlin}"
+
+    implementation project(':utils:mvvm')
+    implementation project(':utils:livedata')
+
+    implementation project(':features:restoran_details:data')
+    implementation project(':features:restoran_details:domain')
+    implementation project(':features:restoran_details:presentation')
+
+    implementation project(':core:network:domain')
+
+    //Koin
+    implementation "org.koin:koin-androidx-scope:${project.versions.koin}"
+    implementation "org.koin:koin-androidx-viewmodel:${project.versions.koin}"
+    implementation "org.koin:koin-androidx-fragment:${project.versions.koin}"
+    implementation "org.koin:koin-androidx-ext:${project.versions.koin}"
+
+    implementation "com.squareup.retrofit2:retrofit:${project.versions.retrofit}"
+}

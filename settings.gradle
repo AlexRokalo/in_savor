@@ -35,8 +35,13 @@ include ':core:navigation:domain'
 
 include ':core:ui-kit'
 
-
+include ':features:restoran_details'
+include ':features:restoran_details:presentation'
+include ':features:restoran_details:data'
+include ':features:restoran_details:domain'
+include ':features:restoran_details:di'
 
 
 include ':app'
 rootProject.name = "InSavor"
+
