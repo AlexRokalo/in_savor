@@ -5,10 +5,10 @@ import com.roof.core.ui_kit.widget.ToolbarWidget.Companion.toolbarTitleRes
 import com.roof.features.favorites.presentation.FavoritesFragment
 import com.roof.features.main.presentation.MainFragment
 import com.roof.features.profile.presentation.ui.ProfileFragment
+import com.roof.filter.presentation.ui.FilterFragment
 import com.roof.navigation.activities.app.IAppRouter
 import com.roof.navigation.utils.withArguments
 import com.roof.payhammer.navigation.R
-import com.roof.presentation.ui.FilterFragment
 import ru.terrakok.cicerone.Router
 import ru.terrakok.cicerone.android.support.SupportAppScreen
 
