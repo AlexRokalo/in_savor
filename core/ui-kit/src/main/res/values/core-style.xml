@@ -73,6 +73,14 @@
         <item name="android:textColor">@color/black_text_title</item>
     </style>
 
+    <style name="Core.Restoran.Title.Black">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Core.Restoran.Title.Black.NotBold">
+        <item name="android:textStyle">normal</item>
+    </style>
+
     <style name="Core.Restoran.Subtitle">
         <item name="android:lineSpacingExtra">4sp</item>
         <item name="android:textSize">14sp</item>
@@ -82,6 +90,20 @@
     <style name="Core.Restoran.Favorite" parent="Widget.AppCompat.CompoundButton.CheckBox">
         <item name="android:button">@drawable/selector_check_box_favorite_restoran</item>
         <item name="android:buttonTintMode">multiply</item>
+    </style>
+
+    <!-- Common features -->
+    <style name="UserInteraction" />
+
+    <style name="UserInteraction.BackButton" parent="Widget.AppCompat.ImageButton">
+        <item name="android:src">@drawable/ic_back</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="UserInteraction.LikeDislikeRatingButtons" parent="Widget.AppCompat.ImageButton">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:padding">16dp</item>
     </style>
 
 </resources>

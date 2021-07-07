@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_restoran_main_info"
+    android:paddingStart="25dp"
+    android:paddingTop="12dp"
+    android:paddingEnd="25dp"
+    android:paddingBottom="12dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/Core.Restoran.Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Ресторан-пивоварня «Друзья»" />
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        style="@style/Core.Restoran.Subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:text="Традиционная кухня" />
+
+    <TextView
+        android:id="@+id/tv_time_and_place"
+        style="@style/Core.Restoran.Title.Black.NotBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_subtitle"
+        tools:text="12:00-23:00 Кульман 40" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        style="@style/Core.Restoran.Title.Black.NotBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_time_and_place"
+        tools:text="35 - 60 Br" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
