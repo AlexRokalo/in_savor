@@ -37,6 +37,7 @@ dependencies {
     api project(':features:filter:presentation')
     api project(':features:favorites:presentation')
     api project(':features:main:presentation')
+    api project(':features:restoran_details:presentation')
 
     //Koin
     implementation "org.koin:koin-androidx-viewmodel:${project.versions.koin}"

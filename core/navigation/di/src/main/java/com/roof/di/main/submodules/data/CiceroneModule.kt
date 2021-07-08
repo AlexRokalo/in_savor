@@ -7,6 +7,17 @@ import ru.terrakok.cicerone.Router
 
 internal val cicerone = module {
 
+    //RestoranDetails
+    single(restoranDetailsQualifier) { Cicerone.create(Router()) }
+    single(restoranDetailsQualifier) {
+        val cicerone = get<Cicerone<Router>>(restoranDetailsQualifier)
+        cicerone.router
+    }
+    single(restoranDetailsQualifier) {
+        val cicerone = get<Cicerone<Router>>(restoranDetailsQualifier)
+        cicerone.navigatorHolder
+    }
+
     //Main
     single(appQualifier) { Cicerone.create(Router()) }
     single(appQualifier) {

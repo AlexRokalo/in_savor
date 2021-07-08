@@ -10,4 +10,5 @@ abstract class BaseMainViewModel : RxViewModel() {
     abstract val proposals: Observable<List<DailyProposal>>
     abstract val restorans: Observable<List<Restoran>>
 
+    abstract fun navigateToRestoranDetails()
 }

@@ -15,5 +15,10 @@
             android:name="com.roof.navigation.activities.app.AppActivity"
             android:theme="@style/Core.Theme.AppTheme" />
 
+        <activity
+            android:name="com.roof.navigation.activities.app.restoran_details.RestoranDetailsActivity"
+            android:theme="@style/Core.Theme.AppTheme" />
+
+
     </application>
 </manifest>

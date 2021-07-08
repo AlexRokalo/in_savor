@@ -6,7 +6,12 @@ import io.reactivex.rxjava3.core.Observable
 
 class MainViewModel(
     override val proposals: Observable<List<DailyProposal>>,
-    override val restorans: Observable<List<Restoran>>
+    override val restorans: Observable<List<Restoran>>,
+    private val router: IMainRouter
 ) : BaseMainViewModel() {
+
+    override fun navigateToRestoranDetails() {
+        router.navigateRestoranDetails()
+    }
 
 }

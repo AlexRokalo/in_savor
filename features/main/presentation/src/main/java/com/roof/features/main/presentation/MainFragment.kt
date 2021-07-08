@@ -64,6 +64,9 @@ class MainFragment : Fragment(R.layout.fragment_main) {
                     chbFavorite.isChecked = item.isFavorite
                 }
 
+                root.setOnClickListener {
+                    viewModel.navigateToRestoranDetails()
+                }
             }
         }
 

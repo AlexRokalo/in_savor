@@ -4,6 +4,7 @@ import com.roof.features.main.domain.model.DailyProposal
 import com.roof.features.main.domain.model.restoran.Restoran
 import com.roof.features.main.domain.model.restoran.kitchen_type.KitchenType
 import com.roof.features.main.presentation.BaseMainViewModel
+import com.roof.features.main.presentation.IMainRouter
 import com.roof.features.main.presentation.MainViewModel
 import io.reactivex.rxjava3.core.Observable
 import org.koin.androidx.viewmodel.dsl.viewModel
@@ -70,7 +71,8 @@ internal val viewModels = module {
     viewModel<BaseMainViewModel> {
         MainViewModel(
             proposals = Observable.just(proposals),
-            restorans = Observable.just(restorans)
+            restorans = Observable.just(restorans),
+            router = get<IMainRouter>()
         )
     }
 }

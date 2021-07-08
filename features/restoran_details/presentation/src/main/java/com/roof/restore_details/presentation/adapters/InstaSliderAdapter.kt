@@ -13,9 +13,7 @@ class InstaSliderAdapter : SliderViewAdapter<InstaSliderAdapter.SliderAdapterVH>
 
     private val items = mutableListOf<String>()
 
-    override fun getCount(): Int {
-        TODO("Not yet implemented")
-    }
+    override fun getCount(): Int = items.size
 
     override fun onCreateViewHolder(parent: ViewGroup): SliderAdapterVH {
         val inflate = LayoutInflater.from(parent.context)
