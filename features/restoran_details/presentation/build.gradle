@@ -20,6 +20,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    buildFeatures {
+        viewBinding true
+    }
+
 }
 
 dependencies {
@@ -55,4 +60,14 @@ dependencies {
     //RxPermission
     def rxPermission_version = '0.12'
     implementation "com.github.tbruyelle:rxpermissions:$rxPermission_version"
+
+    //Instagram slider
+    def insta_slider = '1.4.0'
+    implementation "com.github.smarteist:autoimageslider:$insta_slider"
+
+    //ViewBindingDelegate
+    def viewbindingpropertydelegate_version = '1.4.1'
+    implementation "com.kirich1409.viewbindingpropertydelegate:viewbindingpropertydelegate:$viewbindingpropertydelegate_version"
+
+
 }
