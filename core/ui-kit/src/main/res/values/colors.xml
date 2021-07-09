@@ -15,4 +15,7 @@
     <color name="black_text_title">#4F5458</color>
     <color name="grey_text_subtitle">#BDBDBD</color>
     <color name="green_text_rate">#6FCF97</color>
+
+    <!-- View -->
+    <color name="gray_divider">#BDBDBD</color>
 </resources>
