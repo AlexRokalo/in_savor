@@ -73,7 +73,6 @@
         app:sliderScrollTimeInSec="1"
         app:sliderStartAutoCycle="false" />
 
-
     <include
         android:id="@+id/include_schedule"
         layout="@layout/include_schedule"
